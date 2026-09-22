@@ -1,0 +1,249 @@
+/* =====================================================
+   COLOURS USED ON THIS PAGE (change them to re-theme):
+   Dark green : #0F2E25   (text, navbar, hero, footer)
+   Yellow     : #FFC233   (buttons, dots, step numbers)
+   Light mint : #E3F0E8   (food icon background)
+   Page grey  : #F6F8F5   (page background)
+   ===================================================== */
+
+/* ---------- Whole page ---------- */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #F6F8F5;
+  color: #0F2E25;
+}
+
+/* ---------- Navbar ---------- */
+.site-nav {
+  background-color: #0F2E25;
+}
+.site-nav .navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.site-nav .nav-link {
+  color: white;
+}
+
+/* ---------- Hero (top section) ---------- */
+.hero {
+  background-color: #0F2E25;
+  color: white;
+  padding: 50px 0 70px;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.hero .subtext {
+  color: #cfe0d6;
+}
+
+/* Yellow button */
+.btn-yellow {
+  background-color: #FFC233;
+  color: #0F2E25;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 22px;
+}
+.btn-yellow:hover {
+  background-color: #ffd05e;
+  color: #0F2E25;
+}
+
+/* ---------- Crowd meter card ---------- */
+.meter-card {
+  background-color: white;
+  color: #0F2E25;
+  border-radius: 20px;
+  padding: 24px;
+}
+.big-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* FLEXBOX: dots sit in a row and wrap onto the next line */
+.people-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0;
+}
+.dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #DCE6DF;
+}
+.dot.filled {
+  background-color: #FFC233;
+}
+
+/* ---------- Sections (shared spacing) ---------- */
+.section {
+  padding: 50px 0;
+}
+
+/* ---------- How it works ---------- */
+.step {
+  display: flex;
+  gap: 14px;
+}
+.step-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFC233;
+  font-weight: 700;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Menu ---------- */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.menu-card {
+  background-color: white;
+  border: 1px solid #D5E0D9;
+  border-radius: 16px;
+  padding: 16px;
+}
+.menu-icon {
+  background-color: #E3F0E8;
+  border-radius: 12px;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 12px;
+}
+.menu-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-add {
+  background-color: #E3F0E8;
+  color: #0F2E25;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.btn-add:hover {
+  background-color: #0F2E25;
+  color: white;
+}
+
+/* ---------- Pickup slots ---------- */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 600px;
+}
+.slot {
+  background-color: white;
+  border: 2px solid #0F2E25;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  color: #0F2E25;
+}
+.slot.chosen {
+  background-color: #0F2E25;
+  color: white;
+}
+.slot.full {
+  background-color: #EEF2EF;
+  border-color: #D5E0D9;
+  color: #7D8B83;
+  text-decoration: line-through;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #0F2E25;
+  color: #b9cfc3;
+  padding: 24px 0;
+}
+
+/* ---------- Small screens (phones) ---------- */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .slot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Auth page styles ---------- */
+.auth-wrap {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+.auth-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 36px;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px rgba(15, 46, 37, 0.06);
+}
+.auth-badge {
+  display: inline-block;
+  background-color: #E3F0E8;
+  color: #0F2E25;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+.form-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #D5E0D9;
+  padding: 10px 14px;
+}
+.form-control:focus {
+  border-color: #0F2E25;
+  box-shadow: 0 0 0 3px rgba(15, 46, 37, 0.12);
+}
+.btn-yellow {
+  background-color: #FFC233;
+  color: #0F2E25;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 22px;
+  border: none;
+}
+.btn-yellow:hover {
+  background-color: #ffd05e;
+  color: #0F2E25;
+}
+
+.auth-error {
+  display: none;
+  background-color: #FCEAEA;
+  color: #8A2E2E;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+.auth-error.show {
+  display: block;
+}

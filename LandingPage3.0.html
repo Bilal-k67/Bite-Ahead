@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bite Ahead | Campus Canteen Pre-Order</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font: DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Bite Ahead</a>
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#slots">Pickup</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-yellow btn-sm" href="AdminLogin.html">Admin login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header class="hero" id="top">
+    <div class="container">
+
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <h1>Order ahead. Skip the line.</h1>
+          <p class="subtext fs-5 mt-3">Pick your food, choose a pickup slot, and walk in when it's ready. Check how busy the canteen is before you leave class.</p>
+          <a href="#menu" class="btn btn-yellow mt-3">Start your order</a>
+        </div>
+
+        <div class="col-lg-5 offset-lg-1">
+          <div class="meter-card">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="h6 mb-0">Canteen right now</h2>
+              <span class="badge text-bg-warning">Moderate</span>
+            </div>
+            <p class="small text-secondary mb-3">Example numbers for the demo</p>
+
+            <p class="mb-0"><span class="big-number">14</span> people in line</p>
+
+            <!-- 20 dots: the first 14 are "filled", the last 6 are empty -->
+            <div class="people-dots">
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot filled"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+
+            <p class="mb-0">Wait in line: about <strong>8 min</strong><br>
+            With a pre-order: about <strong>2 min</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+  <section class="section" id="how">
+    <div class="container">
+      <h2 class="fw-bold mb-4">How it works</h2>
+
+      <!-- Bootstrap grid: 3 columns on medium screens and up -->
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3 class="h5">Pick your food</h3>
+              <p>Browse today's menu and add what you want to your order.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3 class="h5">Choose a pickup slot</h3>
+              <p>Check the crowd meter, then pick a time that fits your break.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3 class="h5">Collect with your token</h3>
+              <p>Show your token at the pickup counter and take your food. No queue.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section pt-0" id="menu">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Today's menu</h2>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-icon">🍛</div>
+          <h3 class="h6">Chicken biryani</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 250</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🌯</div>
+          <h3 class="h6">Paratha roll</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 180</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🥟</div>
+          <h3 class="h6">Samosa chaat</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 100</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🥪</div>
+          <h3 class="h6">Club sandwich</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 220</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🍟</div>
+          <h3 class="h6">Fries</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 120</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🍵</div>
+          <h3 class="h6">Doodh patti chai</h3>
+          <div class="menu-bottom">
+            <span class="fw-bold">Rs 60</span>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PICKUP SLOTS ================= -->
+  <section class="section pt-0" id="slots">
+    <div class="container">
+      <h2 class="fw-bold mb-2">Choose a pickup slot</h2>
+      <p class="mb-4">Crossed-out slots are full. The dark slot is the one you picked.</p>
+
+      <div class="slot-grid">
+        <button type="button" class="slot full" disabled>12:00 pm</button>
+        <button type="button" class="slot">12:15 pm</button>
+        <button type="button" class="slot chosen">12:30 pm</button>
+        <button type="button" class="slot full" disabled>12:45 pm</button>
+        <button type="button" class="slot">1:00 pm</button>
+        <button type="button" class="slot">1:15 pm</button>
+        <button type="button" class="slot">1:30 pm</button>
+        <button type="button" class="slot">1:45 pm</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span><strong class="text-white">Bite Ahead</strong>, a university web development project</span>
+      <span>Queue numbers and slots on this page are examples.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
